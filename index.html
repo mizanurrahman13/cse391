@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rahul Ahmed Sezan - Personal Webpage</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        /* Inline CSS for minor elements */
+        .bold { font-weight: bold; }
+        .highlight { color: #007bff; }
+        @keyframes fadeIn { 
+            from { opacity: 0; } 
+            to { opacity: 1; } 
+        }
+        .fade-in { animation: fadeIn 2s ease-in-out; }
+        .section-background { 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            padding: 40px; 
+            position: relative; 
+        }
+        .overlay { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            bottom: 0; 
+            background-color: rgba(255, 255, 255, 0.7); 
+        }
+        .content { 
+            position: relative; 
+            z-index: 1; 
+            background-color: rgba(255, 255, 255, 0.8); /* Make cards slightly transparent */
+            padding: 20px; 
+            border-radius: 8px; 
+        }
+        /* Default (Light Mode) */
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+
+        /* Additional elements (optional) */
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body class="fade-in">
+    <header>
+        <div class="header-content">
+            <img src="assets/images/rahul.jpg" alt="Your Photo">
+            <h1>Rahul Ahmed Sezan</h1>
+            <nav>
+                <a href="#personal-info">Personal Info</a>
+                <a href="#about-me">About Me</a>
+                <a href="#education">Education</a>
+                <a href="#technical-skills">Technical Skills</a>
+                <a href="#contact-me">Contact Me</a>                
+                <button id="themeToggle" style="padding: 10px; cursor: pointer;">
+                    Switch to Dark Mode
+                </button>
+    
+            </nav>
+        </div>
+    </header>
+    <div class="landing-page">
+        <div style="text-align: left; color: black; width: 50%; margin-left: 8.33%;">
+            <p style="margin: 0;">Hi, my name is</p>
+            <h1 style="margin: 0;">Rahul Ahmed Sezan</h1>
+            <h2 style="margin: 0;">Software Engineer</h2>
+            <p>I am a dedicated engineering student balancing my university studies with hands-on projects. Despite a busy schedule, I excel in developing innovative engineering solutions and constantly seek to expand my knowledge of emerging technologies. My passion for engineering and commitment to education make me a standout talent in the field.</p>
+            <div style="display: flex; gap: 10px;">
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="button">Check out my LinkedIn</a>
+                <a href="https://github.com/your-github-profile" target="_blank" class="button">Check out my GitHub</a>
+            </div>
+        </div>
+    </div>
+    <section id="personal-info" class="section-background background-personal-info">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Personal Info</h2>
+            <p><strong class="bold">Name:</strong> <span class="highlight">Rahul Ahmed Sezan</span></p>
+            <p><strong class="bold">Background:</strong> Your background information...</p>
+        </div>
+    </section>
+    <section id="about-me" class="section-background background-about-me">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Here is some information about me...</p>
+            <blockquote class="quote">"Your favorite quote goes here. For example, 'To be or not to be, that is the question.'" - Shakespeare</blockquote>
+            <div class="image-container">
+                <img src="assets/images/rahul.jpg" alt="About Me Image">
+            </div>
+        </div>
+    </section>
+    <section id="education" class="section-background background-education">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Course 1</td>
+                    <td>This course covers...</td>
+                </tr>
+                <tr>
+                    <td colspan="2">This is a merged cell that spans both columns for a detailed description or note.</td>
+                </tr>
+                <tr>
+                    <td>Course 2</td>
+                    <td>This course includes...</td>
+                </tr>
+                <tr>
+                    <td>Course 3</td>
+                    <td>This course focuses on...</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="technical-skills" class="section-background background-technical-skills">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+            </ul>            
+        </div>
+    </section>    
+
+    <section id="categorized-links" class="section-background background-categorized-links">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Categorized Links</h2>
+            <div class="anchor-links">
+                <a href="#hobbies">Hobbies</a>
+                <a href="#sports">Sports</a>
+                <a href="#extracurricular-activities">Extracurricular Activities</a>
+            </div>
+            <div class="internal-links">
+                <p><a href="hobbies.html">Hobbies Page</a></p>
+                <p><a href="projects.html">Projects Page</a></p>
+            </div>
+            <div class="external-links">
+                <p><a href="https://example.com" target="_blank">External Website</a></p>
+                <p>This is a link to <a href="https://www.bracu.ac.bd" target="_blank">BRAC University</a>.</p>
+                <p>Join our discussion on <a href="https://discord.com/invite/cse391" target="_blank">CSE 391 Discord</a> page.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-me" class="section-background background-contact">
+        <div class="overlay"></div>
+        <div class="content" style="background: green; border-radius: 15px; padding: 20px; color: white;">
+            <h2 style="text-align: center; font-size: 2em; margin-bottom: 20px;">Contact Me</h2>
+            <form id="contactForm" style="display: flex; flex-direction: column; gap: 15px; font-size: 1.2em;">
+                <label for="name" style="display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 1.5em; color: white;">&#128100;</span> Name:
+                </label>
+                <input type="text" id="name" name="name" style="padding: 10px; border-radius: 8px; border: none; font-size: 1em;" required>
+    
+                <label for="email" style="display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 1.5em; color: white;">&#128231;</span> Email:
+                </label>
+                <input type="email" id="email" name="email" style="padding: 10px; border-radius: 8px; border: none; font-size: 1em;" required>
+    
+                <label for="message" style="display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 1.5em; color: white;">&#128172;</span> Message:
+                </label>
+                <textarea id="message" name="message" rows="3" style="padding: 10px; border-radius: 8px; border: none; font-size: 1em;" required></textarea>
+    
+                <button type="submit" style="background: #ff6f61; color: white; padding: 15px; border: none; border-radius: 8px; font-size: 1.2em; cursor: pointer; text-transform: uppercase; transition: background 0.3s;">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </section>   
+
+    <footer>
+        <p>Contact: rahul@gmail.com</p>
+        <p>© 2025 Rahul Ahmed Sezan</p>
+        <p id="location"></p>
+        <p id="last-modified"></p>
+        <script>
+            // Cache DOM elements
+            const locationElement = document.getElementById('location');
+            const lastModifiedElement = document.getElementById('last-modified');
+            const contactForm = document.getElementById('contactForm');
+            const toggleButton = document.getElementById('themeToggle');
+
+            // Set location and last-modified details
+            if (locationElement) locationElement.textContent = 'Location: Dhaka, Bangladesh';
+            if (lastModifiedElement) lastModifiedElement.textContent = 'Last modified: ' + document.lastModified;
+
+            // Add event listener for contact form submission
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+
+                    // Cache input values
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+
+                    // Store data in local storage
+                    localStorage.setItem('contactFormData', JSON.stringify({ name, email, message }));
+
+                    alert('Your message has been saved locally.');
+                    contactForm.reset(); // Clear form fields
+                });
+            }
+
+            // Theme toggle functionality
+            if (toggleButton) {
+                toggleButton.addEventListener('click', () => {
+                    const body = document.body;
+
+                    if (body) {
+                        body.classList.toggle('dark-mode');
+                        toggleButton.textContent = body.classList.contains('dark-mode') 
+                            ? 'Switch to Light Mode' 
+                            : 'Switch to Dark Mode';
+                    }
+                });
+            }            
+        </script>
+    </footer>
+</body>
+</html>

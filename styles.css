@@ -1,0 +1,303 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: white;
+    color: #333;
+    text-align: left; /* Align header content to the left */
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread items between left and right */
+    padding: 0 1em;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header img {
+    max-width: 50px;
+    border-radius: 50%;
+    border: 2px solid green;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav {
+    margin-left: auto; /* Align navigation to the right side */
+}
+
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.landing-page {
+    background-color: #007bff;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-page h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.landing-page p {
+    font-size: 1.2em;
+}
+
+.landing-page a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+section {
+    padding: 2em;
+    margin: 2em 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#personal-info {
+    background-size: cover;
+    background-position: center;
+}
+
+.personal-info img {
+    max-width: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.personal-info img:hover {
+    transform: translateY(-10px);
+}
+
+#about-me {
+    background-size: cover;
+    background-position: center;
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+}
+
+#education {
+    background-size: cover;
+    background-position: center;
+}
+
+.list-item {
+    color: #007bff;
+}
+
+#technical-skills {
+    background-size: cover;
+    background-position: center;
+}
+
+#categorized-links {
+    background-size: cover;
+    background-position: center;
+}
+
+.anchor-links a {
+    display: block;
+    margin: 1em 0;
+}
+
+#contact-me {
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: white;
+    color: #333;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+tr:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+tr:hover {
+    background-color: #d0d0d0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    nav {
+        margin-left: 0;
+    }
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+    .landing-page {
+        text-align: left;
+        padding: 1em;
+    }
+    .landing-page div {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        align-items: flex-start;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+    .landing-page h1 {
+        font-size: 1.5em;
+    }
+    .landing-page h2 {
+        font-size: 1.2em;
+    }
+    .landing-page p {
+        font-size: 1em;
+    }
+    .landing-page div {
+        gap: 5px;
+    }
+    .landing-page a {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: red;
+    color: white;
+}
+
+.image-container {
+    float: right;
+    width: 250px; /* Increased the size */
+    height: 250px; /* Increased the size */
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-background {
+    overflow: hidden;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}
+
+.city {
+    display: none;
+}
+
+.city:first-child {
+    display: block;
+}
+
+.w3-red {
+    background-color: red !important;
+    color: white;
+}
+
+.w3-sidebar {
+    height: 100%; /* Ensure sidebar takes full height */
+    position: fixed; /* Fix the sidebar in place */
+}
+
+.background-personal-info { 
+    background-image: url('https://www.svgrepo.com/show/482953/personal-information-file-4.svg'); 
+}
+.background-about-me { 
+    background-image: url('https://www.svgrepo.com/show/486255/personal-center-basic-information.svg'); 
+}
+.background-education { 
+    background-image: url('assets/svg/education.svg'); 
+}
+.background-technical-skills { 
+    background-image: url('assets/svg/skills.svg'); 
+}
+.background-categorized-links { 
+    background-image: url('assets/svg/list-svgrepo-com.svg'); 
+}
+.landing-page { 
+    background-image: url('assets/svg/landingpage.svg'); 
+    background-size: cover; 
+    border-radius: 8px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+}
+
+footer {
+    padding-top: 0px; /* Add padding to the top */
+    clear: both; /* Ensure footer doesn't overlap */
+}
+
+/* Add margin-bottom to the last section */
+.section-background:last-of-type {
+    margin-bottom: 150px; /* Adjust as needed */
+}
